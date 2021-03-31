@@ -3,13 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Githubを使ってみる</title>
+  <title>中下のポートフォリオ</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon favicon" href="img/favicon.png">
+  <meta name="google-site-verification" content="YGODzUCjt9_qkmWCYjIdnvL6xFf7HE-n_Um2Bvs3x_I" />
 </head>
 <body>
-  <h1>初めてのgit</h1>
-  <p>gitの練習</p>
-  <h2>github上で編集</h2>
-  <p>ローカルでpを追加</p>
+  <header>
+    <div class="logo">
+    <h1>中下のポートフォリオ</h1>
+    <p>こちらは私の制作したポートフォリオサイトとなります。<br>
+    Web版とPDF版のリンクは下記リンクよりご確認ください。</p>
+  </div><!-- logo -->
+  </header>
+  <main>
+    <div class="content">
+  <div class="box box01">
+    <h2><a href="http://nakamasa.starfree.jp/web-portfolio/">WEB</a></h2>
+  </div>
+  <div class="box box02">
+    <h2><a href="https://drive.google.com/file/d/1gT5VztvyULRSVcR-P_gGmK8vAU5iH3wl/view?usp=sharing">PDF</a></h2>
+  </div>
+</div>
+  </main>
+  <footer><p><small>&copy; 中下のポートフォリオ</small></p></footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/bubbly-bg.js"></script>
+  <script>
+    bubbly({
+    animate: true,
+    blur: 1, // default is 4
+    bubbleFunc: () => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`, // default is () => `hsla(0, 0%, 100%, ${r() * 0.1})
+    bubbles: 50, // default is Math.floor((canvas.width + canvas.height) * 0.02);
+    canvas: document.querySelector("#background"), // default is created and attached
+    colorStart: "#004c39", // default is blue-ish
+    colorStop: "#1a001a",// default is blue-ish
+    compose: "lighter", // default is "lighter"
+    shadowColor: "#0ff", // default is #fff
+    angleFunc: () => Math.random() * Math.PI * 2, // default is this
+    velocityFunc: () => 0.1 + Math.random() * 0.5, // default is this
+    radiusFunc: () => 4 + Math.random() * 25 // default is 4 + Math.random() * width / 25
+});
+  </script>
 </body>
 </html>
